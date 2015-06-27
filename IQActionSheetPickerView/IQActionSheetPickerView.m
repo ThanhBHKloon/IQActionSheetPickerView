@@ -120,7 +120,7 @@
             _datePicker = [[UIDatePicker alloc] initWithFrame:_pickerView.frame];
             [_datePicker addTarget:self action:@selector(dateChanged:) forControlEvents:UIControlEventValueChanged];
             _datePicker.frame = _pickerView.frame;
-            [_datePicker setDatePickerMode:UIDatePickerModeDate];
+            [_datePicker setDatePickerMode:UIDatePickerModeDateAndTime];
             [self addSubview:_datePicker];
         }
         
