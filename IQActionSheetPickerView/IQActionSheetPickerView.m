@@ -212,11 +212,12 @@
 
 -(void)pickerDoneClicked:(UIBarButtonItem*)barButton
 {
+    NSMutableArray *selectedTitles = [[NSMutableArray alloc] init];
     switch (_actionSheetPickerStyle)
     {
         case IQActionSheetPickerStyleTextPicker:
         {
-            NSMutableArray *selectedTitles = [[NSMutableArray alloc] init];
+            
 
             for (NSInteger component = 0; component<_pickerView.numberOfComponents; component++)
             {
