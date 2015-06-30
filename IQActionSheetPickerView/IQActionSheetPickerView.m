@@ -243,6 +243,16 @@
             break;
         case IQActionSheetPickerStyleDatePicker:
         case IQActionSheetPickerStyleDateTimePicker:
+        {
+            [selectedTitles addObject:_datePicker.date];
+            [self setDate:_datePicker.date];
+            
+            [self setSelectedTitles:@[_datePicker.date]];
+            
+            [self.delegate actionSheetPickerView:self didSelectTitles:selectedTitles];
+            break;
+
+        }
         case IQActionSheetPickerStyleTimePicker:
         {
             [self setDate:_datePicker.date];
