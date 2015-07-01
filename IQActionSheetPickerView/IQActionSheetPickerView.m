@@ -61,7 +61,7 @@
         //UIToolbar
         {
             _actionToolbar = [[UIToolbar alloc] init];
-            _actionToolbar.barStyle = UIBarStyleDefault;
+            _actionToolbar.barStyle = UIBarStyleBlackTranslucent;
             [_actionToolbar sizeToFit];
             
             CGRect toolbarFrame = _actionToolbar.frame;
@@ -88,7 +88,7 @@
             
             UIBarButtonItem *titlebutton = [[UIBarButtonItem alloc] initWithCustomView:_titleLabel];
             titlebutton.enabled = NO;
-            [items addObject:titlebutton];
+//            [items addObject:titlebutton];
             
             
             //  Create a fake button to maintain flexibleSpace between doneButton and nilButton. (Actually it moves done button to right side.
